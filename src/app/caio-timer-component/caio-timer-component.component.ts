@@ -17,4 +17,8 @@ export class CaioTimerComponentComponent implements OnInit {
     this.counter = this.counter + 1;
   }, 1000);
 
+  ResetCounter(){
+    this.counter = 0;
+  }
+
 }
