@@ -8,14 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class CaiosimpleInterestComponentComponent implements OnInit {
   valor: number;
   periodo: number;
-  taxa: 0.1;
-  resultado: number;
+  taxa: number;
+  
 
-  constructor() {}
+  constructor() {
+    this.valor = 0;
+    this.periodo = 0;
+    this.taxa = 0.1;
+  }
 
   ngOnInit() {}
 
   getJuros() {
-    return this.resultado = this.valor * (1 + this.taxa * this.periodo);
+    return this.valor * (1 + (this.taxa / 100) * this.periodo);
   }
 }

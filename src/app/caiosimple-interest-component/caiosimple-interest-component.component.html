@@ -5,8 +5,6 @@
 />
 
 <p>Insira o valor:</p>
-<input type="number" step="100" [(ngModel)]="valor"
-/>
+<input type="number" step="100" [(ngModel)]="valor"/>
 
-<button (click)="getJuros()">Calcule</button>
-<p>{{resultado}}</p>
+<div>Valor Final com juros: R${{getJuros()}}
