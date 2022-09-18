@@ -1,0 +1,11 @@
+<h2>Juros Simples</h2>
+
+<p>Insira o perido de juros:</p>
+<input type="number" step="1" [(ngModel)]="periodo"
+/>
+
+<p>Insira o valor:</p>
+<input type="number" step="100" [(ngModel)]="valor"
+/>
+
+<button (click)="getJuros()">Calcule</button>
